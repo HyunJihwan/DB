@@ -221,17 +221,6 @@ SELECT TRUNC(105.54,1) trunc1
 	FROM dual;
 
 
--- sal 를 1000으로 나눴을때의 나머지 ==> MOD 함수, 별도의 연산자는 없다.
--- 몫 : quotient, 나머지 : remainder
-SELECT ENAME, TRUNC(SAL/1000,0) quotient, MOD(sal,1000) remainder 
-FROM emp;
-
--- 날짜 관련 함수
--- SYSDATE : 오라클에서 제공해주는 특수함수
---			1. 인자가 없음
---			2. 오라클이 설치된 서버의 현재 년, 월, 일, 시, 분, 초 정보를 반환해주는 함수
-
-
 
 
 
