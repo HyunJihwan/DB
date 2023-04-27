@@ -120,6 +120,7 @@ FROM(SELECT cid , SUM(cnt) a, pid
 WHERE a.cid = gc.cid 
 AND gc.pid = c.pid;
 
+
 -- 실습 11 
 SELECT c.pid ,pnm , gc.a "SUM(CNT)" 
 FROM(SELECT SUM(cnt) a, pid  
@@ -129,13 +130,15 @@ FROM(SELECT SUM(cnt) a, pid
 		 product c
 WHERE gc.pid = c.pid;
 
--- 실습 12
 SELECT *
-FROM HR-COUNTRIES;
+FROM CYCLE;
 
+SELECT *
+FROM PRODUCT;
 
-
-
-
+SELECT c.PID ,p.PNM ,SUM(CNT) 
+FROM CYCLE c, PRODUCT p 
+WHERE c.PID = p.PID 
+GROUP BY c.PID ,p.PNM;
 
 
