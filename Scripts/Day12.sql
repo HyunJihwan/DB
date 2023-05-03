@@ -341,9 +341,12 @@ INSERT INTO EMP_TEST VALUES (9999, '김상재' , 1);
 DEPT_TEST 테이블에 존재하는 부서번호로 EMP_TEST 테이블에 입력하는 경우;
 INSERT INTO EMP_TEST VALUES (9998, 'SALLY' , 2);
 
-
 SELECT *
 FROM EMP_TEST;
+
+
+
+
 
 COMMIT;
 	
